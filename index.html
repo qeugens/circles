@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Squares</title>
+    <style media="screen">
+    body {
+      background-color: black;
+      height: 2000px;
+    }
+      .square1 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 20px;
+      top: 40px;
+      background: white;
+      animation: one 4s infinite;
+      left: calc(50% - 12em);
+      transform-origin: 100% 6em;
+      }
+      .square2 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 20px;
+      top:240px;
+      background: white;
+      animation: one 1s infinite;
+      left: calc(50% + 2em);
+      transform-origin: 100% 100%;
+      }
+      .square3 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 800px;
+      top:440px;
+      background: white;
+      animation: three 5s infinite
+      }
+      .square4 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 800px;
+      top:640px;
+      background: white;
+      animation: four 1s infinite
+      }
+      .square5 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 800px;
+      top:840px;
+      background: white;
+      animation: five 1s infinite linear reverse;
+      }
+      .square6 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 800px;
+      top:1040px;
+      background: white;
+      animation: five 6s infinite linear reverse;
+      }
+      .square7 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 800px;
+      top:1240px;
+      background: white;
+      animation: seven 4s infinite
+      }
+      .square8 {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 800px;
+      top:1440px;
+      background: white;
+      animation: eight 5s infinite ease-out;
+      }
+      .square9 {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      left: 800px;
+      top:1640px;
+      background: white;
+      animation: nine 6s infinite ease-out;
+      }
+      .square10 {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      left: 800px;
+      top:1840px;
+      background: white;
+      animation: ten 3s infinite ease-out;
+      }
+
+      @keyframes one {
+        0%, 10% {
+      transform: translateX(0);
+    }
+       40%, 60% {
+      transform: rotateZ(90deg);
+    }
+       90%, 100% {
+      transform: translateX(0);
+    }
+      }
+      @keyframes three {
+        0%, 5% {
+      transform: translate(-12em);
+    }
+        45%, 55% {
+      transform: translate(12em);
+    }
+        95%, 100% {
+      transform: translate(-12em);
+    }
+      }
+      @keyframes four {
+        0%, 5% {
+      transform: translate(-12em);
+    }
+        20% {
+      transform: translate(12em) scaleY(1.5);
+        }
+        45%, 55% {
+      transform: translate(12em);
+    }
+        70% {
+      transform: translate(-12em) scaleY(1.5);
+    }
+        95%, 100% {
+      transform: translate(-12em);
+    }
+      }
+      @keyframes five {
+        100% {
+      transform: rotateZ(360deg);
+      }
+    }
+      @keyframes seven {
+        0%, 10% {
+      transform: none;
+    }
+        26%, 30% {
+      transform: rotateZ(-45deg) scale(1.25);
+    }
+        40% {
+      transform: rotateZ(-45deg) translate(2em, -2em) scale(1.8);
+    }
+        50%, 75% {
+      transform: rotateZ(-45deg) scale(1.1);
+    }
+        90%, 100% {
+      transform: none;
+    }
+      }
+      @keyframes eight {
+        0%, 15% {
+      opacity: 0;
+      transform: none;
+    }
+       15%, 25% {
+      opacity: 1;
+      transform: none;
+    }
+       28%, 38% {
+      transform: translateX(-2em);
+    }
+       40%, 45% {
+      transform: translateX(-4em);
+    }
+       50%, 52% {
+      transform: translateX(-4em) rotateZ(-20deg);
+    }
+       70%, 75% {
+      transform: translateX(-4em) rotateZ(-10deg);
+    }
+       78% {
+      transform: translateX(-4em) rotateZ(-24deg);
+      opacity: 1;
+    }
+      86%, 100% {
+      transform: translateX(-6em) translateY(4em) rotateZ(-90deg);
+      opacity: 0;
+    }
+      }
+      @keyframes nine {
+      0%, 15% {
+      opacity: 0;
+    }
+      15%, 25% {
+      transform: none;
+      width: 4em;
+      height: 4em;
+      opacity: 1;
+    }
+      35%, 45% {
+      transform: translateX(6em);
+      height: 5em;
+      width: 4em;
+      animation-timing-function: linear;
+      opacity: 1;
+    }
+      70%, 100% {
+      transform: translateX(6em) translateY(3em);
+      height: 5em;
+      width: 4em;
+      opacity: 0;
+    }
+     }
+      @keyframes ten {
+      0%, 15% {
+      opacity: 0;
+    }
+      15%, 25% {
+      transform: none;
+      width: 4em;
+      height: 4em;
+      opacity: 1;
+    }
+      35%, 45% {
+      transform: translateX(6em);
+      height: 6em;
+      width: 2em;
+      animation-timing-function: linear;
+      opacity: 1;
+    }
+      70%, 100% {
+      transform: translateX(6em) translateY(3em);
+      height: 6em;
+      width: 2em;
+      opacity: 0;
+    }
+     }
+
+    </style>
+  </head>
+  <body>
+      <div class="square1"></div>
+      <div class="square2"></div>
+      <div class="square3"></div>
+      <div class="square4"></div>
+      <div class="square5"></div>
+      <div class="square6"></div>
+      <div class="square7"></div>
+      <div class="square8"></div>
+      <div class="square9"></div>
+      <div class="square10"></div>
+  </body>
+</html>9
